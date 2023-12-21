@@ -1,4 +1,6 @@
-'use client'
+"use client";
+
+import Link from "next/link";
 
 const HomePage: React.FC = () => {
   return (
@@ -12,7 +14,11 @@ const HomePage: React.FC = () => {
           aliquid beatae? Deleniti, iure?
         </p>
         <p className="font-bebas p-1">
-          yes yes yes, this is boring go to the projects instead
+          yes yes yes, this is boring go to the{" "}
+          <u>
+            <Link href="projects">projects</Link>
+          </u>{" "}
+          instead
         </p>
       </div>
     </div>
