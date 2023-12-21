@@ -5,7 +5,11 @@ type Menu = {
 
 const menus: Array<Menu> = [
   {
-    title: "Home",
+    title: "/",
+    path: "/",
+  },
+  {
+    title: "projects",
     path: "/",
   },
   {
