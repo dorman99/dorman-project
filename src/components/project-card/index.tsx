@@ -8,7 +8,7 @@ function ProjectCard(props: ProjectProps) {
   const { project } = props;
   return (
     <>
-      <div className="w-80 h-auto py-1">
+      <div className="w-80 min-h-full py-1 bg-black m-2 p-1">
         <div>
           <p className="text-sm font-bebas">{project.jobTitle} - {project.name}</p>
         </div>

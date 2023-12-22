@@ -34,9 +34,9 @@ function Header() {
   };
   return (
     <>
-      <div className="font-bebas justify-between flex bg-black h-20 items-center">
+      <div className="font-bebas justify-between flex bg-black h-10 mb-1 items-center">
         <div className="text-white pl-4">
-          <Link href="/">dorman.dev</Link>
+          <Link href="/">dorman.tech</Link>
         </div>
         <div className="flex space-x-20 text-white font-bold pr-4">
           {renderMenu()}

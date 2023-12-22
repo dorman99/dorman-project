@@ -1,23 +1,35 @@
 import { COMPANY_HISTORIES } from "@/common/constant";
 import { Projects } from "@/common/type";
+import Modal from "@/components/modal";
 import ProjectCard from "@/components/project-card";
 import { useState } from "react";
 
 function ProjectsPage() {
   const [companyHistories, setCompanyHistories] = useState(COMPANY_HISTORIES);
   const renderProjects = (projects: Array<Projects>) => {
-    return projects.map((p, idx) => <ProjectCard key={idx} project={p} />);
+    return projects.map((p, idx) => (
+      <div className="flex flex-wrap overflow-x-hidden h-96" key={idx}>
+        <ProjectCard key={idx} project={p} />
+      </div>
+    ));
   };
 
   const toogleHide = (idx: number) => {
-    const comp = companyHistories[idx];
-    comp.isShownProject = !comp.isShownProject;
-    setCompanyHistories({ ...companyHistories, ...comp });
+    companyHistories[idx].isShownProject = true;
+    setCompanyHistories([...companyHistories]);
+  };
+
+  const closeModal = () => {
+    const comps = companyHistories.map((c) => {
+      c.isShownProject = false;
+      return c;
+    });
+    setCompanyHistories([...companyHistories, ...comps]);
   };
 
   return (
     <div className="bg-gray-300 h-full">
-      <div className="flex flex-wrap justify-start">
+      <div className="flex flex-wrap justify-center">
         {COMPANY_HISTORIES.map((ch, idx) => (
           <div key={idx} className="p-10">
             <div className="w-80">
@@ -27,7 +39,7 @@ function ProjectsPage() {
                   className="text-xs underline"
                   onClick={() => toogleHide(idx)}
                 >
-                  {!ch.isShownProject ? "expand" : "hide"}
+                  {!ch.isShownProject ? "detail" : "hide"}
                 </button>
               </div>
               <div>
@@ -37,7 +49,9 @@ function ProjectsPage() {
                 </p>
               </div>
             </div>
-            {ch.isShownProject && renderProjects(ch.projects)}
+            {ch.isShownProject && (
+              <Modal onClose={closeModal}>{renderProjects(ch.projects)}</Modal>
+            )}
             <div className="w-full">
               <p className="font-bebas">tech stacks:</p>
               <div className="border border-black  flex flex-wrap w-80 justify-center">
