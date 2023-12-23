@@ -2,9 +2,9 @@
 
 import Link from "next/link";
 
-const HomePage: React.FC = () => {
+const HomePage = () => {
   return (
-    <div className="min-h-full bg-gray-300 flex justify-center">
+    <div className="min-h-full flex justify-center bg-gray-300">
       <div className="flex items-center flex-col justify-center">
         <h1 className="font-bebas">Welcome to the Dorman Tech!</h1>
         <div className="w-80 h-80 flex justify-center">
