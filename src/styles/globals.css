@@ -24,6 +24,11 @@
   }
 }
 
-html,body {
-  overflow-x: hidden;
+.h-85{
+  height: 85vh;
 }
+
+/* not needed anymore, width overflow due to flex */
+/* html,body {
+  overflow-x: hidden;
+} */
