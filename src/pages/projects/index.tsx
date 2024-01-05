@@ -7,11 +7,15 @@ import { useState } from "react";
 function ProjectsPage() {
   const [companyHistories, setCompanyHistories] = useState(COMPANY_HISTORIES);
   const renderProjects = (projects: Array<Projects>) => {
-    return projects.map((p, idx) => (
-      <div className="flex flex-wrap overflow-x-hidden h-96" key={idx}>
-        <ProjectCard key={idx} project={p} />
+    return (
+      <div className="flex overflow-x-scroll hide-scroll-bar">
+        {projects.map((p, idx) => (
+          <div className="inline-block">
+            <ProjectCard key={idx} project={p} />
+          </div>
+        ))}
       </div>
-    ));
+    );
   };
 
   const toogleHide = (idx: number) => {
@@ -48,13 +52,15 @@ function ProjectsPage() {
                 </div>
                 <div>
                   <p className="text-xs">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-                    dolores illo accusantium quod veritatis.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nihil dolores illo accusantium quod veritatis.
                   </p>
                 </div>
               </div>
               {ch.isShownProject && (
-                <Modal onClose={closeModal}>{renderProjects(ch.projects)}</Modal>
+                <Modal onClose={closeModal}>
+                  {renderProjects(ch.projects)}
+                </Modal>
               )}
               <div className="w-full">
                 <p className="font-bebas">tech stacks:</p>
