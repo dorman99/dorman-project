@@ -33,7 +33,7 @@ function ProjectsPage() {
 
   return (
     // full height of the screen
-    <div className="bg-gray-300 h-full pt-5">
+    <div className="bg-gray-100 h-full pt-5">
       {/* fix height & overflow, keeps the footer visible */}
       <div className="h-85 overflow-scroll flex flex-wrap justify-center items-center">
         <div className="flex flex-wrap justify-center">
