@@ -31,11 +31,11 @@ function ProjectsPage() {
     // full height of the screen
     <div className="bg-gray-300 h-full pt-5">
       {/* fix height & overflow, keeps the footer visible */}
-      <div className="h-85 overflow-auto">
+      <div className="h-85 overflow-scroll flex flex-wrap justify-center items-center">
         <div className="flex flex-wrap justify-center">
           {COMPANY_HISTORIES.map((ch, idx) => (
             // p-10 would cramp & push the box causing overflow
-            <div key={idx} className="py-5">
+            <div key={idx} className="p-10">
               <div className="w-80">
                 <div className="flex flex-wrap justify-between">
                   <p className="font-bebas">{ch.companyName}</p>{" "}
