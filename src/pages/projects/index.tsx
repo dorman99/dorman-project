@@ -39,7 +39,7 @@ function ProjectsPage() {
         <div className="flex flex-wrap justify-center">
           {COMPANY_HISTORIES.map((ch, idx) => (
             // p-10 would cramp & push the box causing overflow
-            <div key={idx} className="p-10">
+            <div key={idx} className="p-5">
               <div className="w-80">
                 <div className="flex flex-wrap justify-between">
                   <p className="font-bebas">{ch.companyName}</p>{" "}

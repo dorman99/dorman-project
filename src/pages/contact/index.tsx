@@ -9,7 +9,7 @@ import {
 export default function Contact() {
   return (
     <div className="bg-gray-200 min-h-full container min-w-full flex justify-center items-center">
-      <div className="w-70 h-96 border-black flex-col">
+      <div className="w-70 h-96 border-black flex-col justify-center flex items-center">
         <div className="text-center p-0 m-0">
           <p className="font-bebas">
             Lorem ipsum dolor, sit amet{" "}
@@ -20,7 +20,7 @@ export default function Contact() {
             nihil
           </p>
         </div>
-        <div className="w-full flex justify-center">
+        {/* <div className="w-full flex justify-center">
           <div className="p-2 relative shadow-2xl shadow-black h-36 w-36 m-2 rounded-full">
             <Image
               alt="dorman's"
@@ -29,7 +29,7 @@ export default function Contact() {
               fill
             />
           </div>
-        </div>
+        </div> */}
 
         <div className="w-full flex mx-auto pt-10 justify-around">
           <a href="https://instagram.com/abdillahh" target="/">
