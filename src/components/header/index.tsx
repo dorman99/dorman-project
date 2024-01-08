@@ -16,7 +16,7 @@ const menus: Array<Menu> = [
   },
   {
     title: "Contact",
-    path: "/",
+    path: "/contact",
   },
   {
     title: "Blog",

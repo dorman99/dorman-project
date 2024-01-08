@@ -29,6 +29,18 @@
   height: 85vh;
 }
 
+.w-70 {
+  width: 70vh;
+}
+
+.h-50 {
+  height: 50vh;
+}
+
+.w-50 {
+  width: 50vh;
+}
+
 .hide-scroll-bar {
   -ms-overflow-style: none;
   scrollbar-width: none;
