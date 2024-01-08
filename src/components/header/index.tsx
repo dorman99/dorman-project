@@ -35,7 +35,7 @@ function Header() {
   return (
     <div className="bg-black flex h-20 font-bebas">
       <div className="text-white mobile-only:pl-5 flex-1 flex pl-10 items-center">
-        <Link href="/">dorman.tech</Link>
+        <Link href="/">dorman.dev</Link>
       </div>
       <div className="flex items-center justify-end mobile-only:pr-5 text-white font-bold flex-1 pr-10 gap-4">
         {renderMenu()}
