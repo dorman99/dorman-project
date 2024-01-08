@@ -4,7 +4,7 @@ import Modal from "@/components/modal";
 import ProjectCard from "@/components/project-card";
 import { useState } from "react";
 
-function ProjectsPage() {
+function ExperiencesPage() {
   const [companyHistories, setCompanyHistories] = useState(COMPANY_HISTORIES);
   const renderProjects = (projects: Array<Projects>) => {
     return (
@@ -78,4 +78,4 @@ function ProjectsPage() {
   );
 }
 
-export default ProjectsPage;
+export default ExperiencesPage;

@@ -11,8 +11,8 @@ const menus: Array<Menu> = [
     path: "/",
   },
   {
-    title: "projects",
-    path: "projects",
+    title: "experiences",
+    path: "experiences",
   },
   {
     title: "Contact",
@@ -20,7 +20,7 @@ const menus: Array<Menu> = [
   },
   {
     title: "Blog",
-    path: "/",
+    path: "/blog",
   },
 ];
 
