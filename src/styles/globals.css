@@ -37,6 +37,10 @@
   height: 50vh;
 }
 
+.h-96 {
+  height: 100rem;
+}
+
 .w-50 {
   width: 50vh;
 }

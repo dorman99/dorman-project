@@ -9,11 +9,11 @@ import {
 export default function Contact() {
   return (
     <div className="bg-gray-200 min-h-full container min-w-full flex justify-center items-center">
-      <div className="w-70 h-96 border-black flex-col justify-center flex items-center">
-        <div className="text-center p-0 m-0">
+      <div className="w-auto min-h-full border-black flex-col justify-center flex items-center">
+        <div className="text-center p-0 mobile-only:p-4">
           <p className="font-bebas">
             Lorem ipsum dolor, sit amet{" "}
-            <span className="text-col font-sans text-gray-400">
+            <span className="text-col font-sans text-gray-700 italic underline">
               say hi for collaboration!
             </span>{" "}
             consectetur adipisicing elit. Temporibus obcaecati sapiente labore
