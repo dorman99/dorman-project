@@ -6,7 +6,7 @@ const HomePage = () => {
   return (
     <div className="min-h-full flex justify-center bg-gray-100">
       <div className="flex items-center flex-col justify-center">
-        <h1 className="font-bebas mobile-only:text-md">Welcome to the Dorman Tech!</h1>
+        <h1 className="font-bebas mobile-only:text-md">Welcome to the Dorman Dev!</h1>
         <div className="w-80 h-80 flex justify-center">
           <p className="bg-black font-sans text-gray-300 pt-10 px-2">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit
@@ -23,7 +23,7 @@ const HomePage = () => {
         <p className="font-bebas p-1">
           yes yes and yes, this is boring go to the {" "}
           <u>
-            <Link href="projects">projects</Link>
+            <Link href="experiences">projects</Link>
           </u>{" "}
           instead
         </p>
