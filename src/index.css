@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
+    /* Account for fixed navbar */
+  }
+
+  body {
+    @apply font-sans antialiased text-slate-900 dark:text-slate-100 bg-white dark:bg-slate-950;
+  }
+}
